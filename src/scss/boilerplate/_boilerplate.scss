@@ -1,0 +1,9 @@
+@use '../utils/variables' as v;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    outline: none;
+    font-family: sans-serif;
+    background-color: v.$bg-blue-600;
+}

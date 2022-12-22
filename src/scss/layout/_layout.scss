@@ -1,0 +1,47 @@
+@use '../utils/variables' as v;
+@use '../utils/extends' as e;
+@use '../utils/mixins' as m;
+
+.container{
+    height:100vh;
+    background-color: v.$clr-light-700;
+    @include m.d-flex;
+}
+
+.calc{
+     @extend %shadow-calc;
+     border-radius: 28px;
+     padding: 16px;
+     display: grid;
+     grid-template-columns: repeat(4,66px);
+}
+
+input{
+    @extend %shadow-input;
+    grid-column: span 4;
+    height: 68px;
+    width: 258px;
+    border: none;
+    border-radius: 32px;
+    text-align: end;
+    margin: 40px 0px 30px 0px;
+    padding: 20px;
+    font-size: 40px;
+}
+
+button{
+    @extend %shadow-button;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.equal{
+    @extend %shadow-button;
+    width: 120px;
+    border-radius: 42px;
+}

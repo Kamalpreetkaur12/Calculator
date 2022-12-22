@@ -1,0 +1,21 @@
+@use './variables' as v;
+
+// %bg-input{
+//     background-color: v.$clr-light-700;
+//     color: v.$bg-dark-800;
+// }
+
+%shadow-input{
+    box-shadow: v.$shadow-inset-neg, v.$shadow-inset-bottom;
+    background-color: v.$clr-light-700;
+    color: v.$bg-dark-800;
+}
+
+%shadow-button{
+    box-shadow: v.$shadow-inset-top, v.$shadow-inset-bottom;
+    background-color: v.$clr-light-700;
+}
+
+%shadow-calc{
+    box-shadow: v.$shadow-top, v.$shadow-bottom;
+}
